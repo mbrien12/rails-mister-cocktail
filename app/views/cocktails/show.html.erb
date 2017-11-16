@@ -1,4 +1,9 @@
 <h1><%= @cocktail.name.upcase %></h1>
 <p>All of the details of this lovely cocktail</p>
 
-<p>ADD DOSES OF EACH INGREDIENT</p>
+<% @doses.each do |dose| %>
+<p>DOSE - <%= dose.description %></p>
+<p>INGREDIENT - <%= dose.ingredient.name %> </p>
+<% end %>
+
+<%= link_to 'Back to all cocktails', cocktails_path %>
