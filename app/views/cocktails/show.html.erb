@@ -4,6 +4,13 @@
 <% @doses.each do |dose| %>
 <p>DOSE - <%= dose.description %></p>
 <p>INGREDIENT - <%= dose.ingredient.name %> </p>
+ <%= link_to "Delete", dose_path,
+          method: :delete,
+          data: { confirm: "Are you sure?" } %>
 <% end %>
+
+<p>ADD A NEW DOSE</p>
+<%= render 'dose_form' %>
+
 
 <%= link_to 'Back to all cocktails', cocktails_path %>

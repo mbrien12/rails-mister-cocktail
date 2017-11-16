@@ -7,6 +7,8 @@ class CocktailsController < ApplicationController
 
   def show
     @doses = Dose.where(cocktail: set_cocktail) 
+    @dose = Dose.new
+    @ingredients = Ingredient.order(:name).all
   end
 
   def new
