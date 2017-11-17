@@ -1,13 +1,22 @@
-    <%= render 'shared/home-banner' %>
+
+<%= render 'shared/home-banner' %>
+
+<div class="wrapper">
+  <div class="my-container">
+    <h2>All cocktails</h2>
+      <div class="cards">
+        <% @cocktails.each do |cocktail| %>
+          <%= render 'card', cocktail: cocktail %>
+        <% end %>
+      </div>
+  </div>
+</div>
 
 
-<ul>
-<% @cocktail.each do |cocktail| %>
-<li><%= link_to cocktail.name, cocktail %></li>
-<% end %>
-</ul>
 
-<h3>Create new cocktail</h3>
-<%= link_to 'Create new cocktail here', new_cocktail_path %>
+
+
+
+
 
 

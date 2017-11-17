@@ -1,3 +1,23 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.wrapper {
+  width: 100%;
+  background-color: #F4F2F2;
+}
+
+.my-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.dose-form {
+  margin-top: 40px;
+}
+
+.dose-text {
+  color: #86D930;
+}

@@ -1,18 +1,31 @@
-<h1><%= @cocktail.name.upcase %></h1>
-<p>All of the details of this lovely cocktail</p>
 
-<% @doses.each do |dose| %>
-<p>DOSE - <%= dose.description %></p>
-<p>INGREDIENT - <%= dose.ingredient.name %> </p>
- <%= link_to "Delete", dose_path(dose),
+<div class="wrapper">
+  <div class="my-container">
+    <h1><%= @cocktail.name.upcase %></h1>
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+    <br>
+    <%= link_to "Delete cocktail?", cocktail_path(@cocktail),
           method: :delete,
           data: { confirm: "Are you sure?" } %>
-<% end %>
-
-<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
-
-<p>ADD A NEW DOSE</p>
-<%= render 'dose_form' %>
+    <h3>How to make this cocktail...</h3>
 
 
-<%= link_to 'Back to all cocktails', cocktails_path %>
+        <% @doses.each do |dose| %>
+        <p class="dose-text"><%= "#{dose.description} #{dose.ingredient.name}" %></p>
+
+         <%= link_to "Delete dose?", dose_path(dose),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+        <% end %>
+
+
+          <div class="dose-form">
+            <h4>Add an ingredient and dose</h4>
+            <%= render 'dose_form' %>
+          </div>
+
+
+
+
+  </div>
+</div>

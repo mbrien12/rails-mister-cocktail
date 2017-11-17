@@ -3,7 +3,7 @@
 <nav>
   <div class="nav-left">
   <%= cl_image_tag("cocktail-logo.png", :width=>50, :crop=>"scale")%>
-       <p class="logo-small">Cocktail lovers</p>
+      <%= link_to 'Cocktail lovers', cocktails_path, {class: "logo-small"} %>
   </div>
   <div class= "nav-right">
     <%= link_to 'View all', cocktails_path %>

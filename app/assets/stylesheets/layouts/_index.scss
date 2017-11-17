@@ -4,10 +4,6 @@
 // @import "profile";
 // @import "map";
 
-.simple_form {
-  padding: 50px;
-}
-
 body {
   background-color: white;
 }
@@ -16,7 +12,7 @@ h1 {
   font-family: 'Spectral SC', serif;
 }
 
-h2 {
+h2, h3, h4 {
   font-weight: lighter;
   font-family: 'Quicksand', sans-serif;
 }
@@ -34,4 +30,8 @@ a {
 a:hover {
   text-decoration: none;
   color: #B8E986;
+}
+
+.my-container h2 {
+  margin-bottom: 50px;
 }
