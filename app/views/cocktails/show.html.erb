@@ -9,6 +9,8 @@
           data: { confirm: "Are you sure?" } %>
 <% end %>
 
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
 <p>ADD A NEW DOSE</p>
 <%= render 'dose_form' %>
 

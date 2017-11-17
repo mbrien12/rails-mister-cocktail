@@ -19,6 +19,7 @@ gem 'figaro'
 
 # For image uploading
 gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 
 
