@@ -1,26 +1,25 @@
 
 <div class="wrapper">
   <div class="my-container">
-    <h1><%= @cocktail.name.upcase %></h1>
-    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+    <h1 class="cocktail-title"><%= @cocktail.name.upcase %></h1>
+    <%= cl_image_tag @cocktail.photo, height: 200, width: 800, crop: :fill %>
     <br>
-    <%= link_to "Delete cocktail?", cocktail_path(@cocktail),
-          method: :delete,
-          data: { confirm: "Are you sure?" } %>
-    <h3>How to make this cocktail...</h3>
+      <div class="dose-container">
+        <h3>How to make this cocktail...</h3>
 
 
-        <% @doses.each do |dose| %>
-        <p class="dose-text"><%= "#{dose.description} #{dose.ingredient.name}" %></p>
+          <% @doses.each do |dose| %>
+          <p class="dose-text"><%= "#{dose.description} #{dose.ingredient.name}" %></p>
 
-         <%= link_to "Delete dose?", dose_path(dose),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %>
-        <% end %>
+           <%= link_to "Delete dose?", dose_path(dose),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %>
+          <% end %>
+      </div>
 
 
           <div class="dose-form">
-            <h4>Add an ingredient and dose</h4>
+            <h4>Add an ingredient and description of dose</h4>
             <%= render 'dose_form' %>
           </div>
 

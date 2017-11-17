@@ -15,9 +15,28 @@
 }
 
 .dose-form {
-  margin-top: 40px;
+  margin-top: 60px;
+  width: 800px;
+}
+
+.dose-form h4 {
+  color: gray;
+  margin-left: 50px;
 }
 
 .dose-text {
   color: #86D930;
+  font-weight: bold;
 }
+
+.dose-container {
+  background-color: white;
+  width: 800px;
+  border-radius: 4px;
+  padding: 50px;
+}
+
+.dose-container h3 {
+  margin-bottom: 50px;
+}
+
