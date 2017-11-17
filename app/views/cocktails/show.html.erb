@@ -6,6 +6,9 @@
     <br>
       <div class="dose-container">
         <h3>How to make this cocktail...</h3>
+         <%= link_to "Delete cocktail?", cocktail_path(@cocktail),
+          method: :delete,
+          data: { confirm: "Are you sure?" } %>
 
 
           <% @doses.each do |dose| %>
