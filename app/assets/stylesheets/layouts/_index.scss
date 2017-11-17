@@ -3,3 +3,35 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+.simple_form {
+  padding: 50px;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Spectral SC', serif;
+}
+
+h2 {
+  font-weight: lighter;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+a {
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B8E986;
+}
