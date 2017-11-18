@@ -2,7 +2,7 @@
 <div class="wrapper">
   <div class="my-container">
     <h1 class="cocktail-title"><%= @cocktail.name.upcase %></h1>
-    <%= cl_image_tag @cocktail.photo, height: 200, width: 800, crop: :fill %>
+    <%= cl_image_tag @cocktail.photo, height: 200, width: 800, crop: :fill, class: "banner-image" %>
     <br>
       <div class="dose-container">
         <h3>How to make this cocktail...</h3>

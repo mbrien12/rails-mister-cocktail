@@ -41,3 +41,30 @@
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .banner-image {
+      max-width: 100%;
+    }
+
+    .simple_form {
+      max-width: 100%;
+    }
+
+    .dose-form {
+     max-width: 100%;
+    }
+
+    .dose-container {
+      max-width: 100%;
+    }
+
+    .wrapper {
+      max-width: 100%;
+    }
+
+    .my-container {
+      max-width: 100%;
+    }
+
+  }
