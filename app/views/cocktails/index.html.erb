@@ -4,10 +4,12 @@
 <div class="wrapper">
   <div class="my-container">
     <h2>All cocktails</h2>
+
       <div class="cards">
         <% @cocktails.each do |cocktail| %>
           <%= render 'card', cocktail: cocktail %>
         <% end %>
+
       </div>
   </div>
 </div>

@@ -7,3 +7,28 @@
   margin-top: 50px;
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .flex-two-col {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hp-image {
+      width: 200px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    #home-banner-button {
+      margin-top: 20px;
+    }
+
+}
