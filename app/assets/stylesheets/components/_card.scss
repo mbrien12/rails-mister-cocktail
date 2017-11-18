@@ -28,9 +28,16 @@
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .cards {
+      flex-direction: column;
+    }
+
     .card {
-      width: 100%;
+      width: 200px;
+      height: 250px;
+    }
 
-
+    .my-container {
+      max-width: 100%;
     }
 }
